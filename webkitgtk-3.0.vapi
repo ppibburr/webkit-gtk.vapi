@@ -4218,6 +4218,8 @@ namespace WebKit {
 		public void reload ();
 		public void replace_selection (string text);
 		public void stop_loading ();
+		
+		public void* get_global_context();
 		public Gtk.PolicyType horizontal_scrollbar_policy { get; }
 		public WebKit.LoadStatus load_status { get; }
 		public string name { get; }
@@ -4228,6 +4230,7 @@ namespace WebKit {
 		public virtual signal void hovering_over_link (string p0, string p1);
 		public virtual signal void load_committed ();
 		public virtual signal void load_done (bool p0);
+     		
 		public virtual signal bool scrollbars_policy_changed ();
 		public virtual signal void title_changed (string p0);
 	}
